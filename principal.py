@@ -10,11 +10,4 @@ españa = 0
 paises = [argentina , brasil, usa, china, colombia, rusia ]
 
 
-def cargar_ventas(lista):
-    for i in lista:
-        lista[i] = lista[i - 1]
-        ventas_pais = int(input(f"Ingrese las ventas del pais: "))
-        lista[i + 1] += ventas_pais
-
-
-    return lista
+cargar_ventas(paises)
